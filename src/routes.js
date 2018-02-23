@@ -9,9 +9,15 @@ const Home = Loadable({
   loading: Loading
 });
 
+const LoginPage = Loadable({
+  loader: () => import('./containers/LoginPage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
+    <Route exact path="/login" component={LoginPage} />>
   </Switch>
 );
 

@@ -3,10 +3,10 @@ import Header from '../../components/header';
 import routes from '../../routes';
 
 const App = () => (
-  <div>
+  <React.Fragment>
     <Header />
     <main>{routes}</main>
-  </div>
+  </React.Fragment>
 );
 
 export default App;
