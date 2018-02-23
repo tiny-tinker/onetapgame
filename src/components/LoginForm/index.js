@@ -1,4 +1,5 @@
 import React from 'react';
+import * as styles from './styles.module.css';
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class LoginForm extends React.Component {
     const formStyle = {
       backgroundColor: '#2f3341'
     };
+    console.log(styles.loginform_bkg);
     return (
       <div className="card rounded-2" style={formStyle}>
         <div className="card-header">

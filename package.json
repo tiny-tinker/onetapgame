@@ -26,7 +26,8 @@
     "redux": "^3.7.2",
     "redux-form": "^7.2.3",
     "redux-immutable": "^4.0.0",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "sass-loader": "^6.0.6"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -38,11 +39,16 @@
     "precommit": "lint-staged",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
+    "start-js": "react-app-rewired start",
     "start": "npm-run-all -p watch-css start-js",
-    "build-js": "react-scripts build",
+    "build-js": "react-app-rewired build",
     "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "react-app-rewire-css-modules": "codebandits/react-app-rewire-css-modules",
+    "react-app-rewired": "^1.4.1"
   }
 }
