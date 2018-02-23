@@ -1,3 +1,12 @@
 .loginform_bkg {
-  background-color: '#2f3341';
+  background-color: #2f3341;
+}
+
+.already {
+  font-size: 0.8rem;
+  color: #717486;
+}
+
+.card_header {
+  border-bottom: 2px solid #161a27;
 }

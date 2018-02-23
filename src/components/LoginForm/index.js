@@ -12,15 +12,14 @@ class LoginForm extends React.Component {
   }
 
   render() {
-    const formStyle = {
-      backgroundColor: '#2f3341'
-    };
-    console.log(styles.loginform_bkg);
+    const classCard = ['card rounded-2', styles.loginform_bkg].join(' ');
+    const alreadyClass = ['text-center mb-0', styles.already].join(' ');
+    const cardHClass = ['card-header', styles.card_header].join(' ');
     return (
-      <div className="card rounded-2" style={formStyle}>
-        <div className="card-header">
-          <p className="text-center">Already have an account?</p>
-          <h3 className="mb-0 text-center">Login</h3>
+      <div className={classCard}>
+        <div className={cardHClass}>
+          <p className={alreadyClass}>Already have an account?</p>
+          <h3 className="mb-0 text-center text-white">Login from here</h3>
         </div>
         <div className="card-body">
           <form
@@ -31,15 +30,18 @@ class LoginForm extends React.Component {
             noValidate=""
             method="POST"
           >
-            <div className="form-group">
-              <label htmlFor="uname1">Username</label>
+            <div className="input-group mb-3">
+              <div className="input-group-prepend">
+                <span className="input-group-text fa fa-user rounded-0" />
+              </div>
               <input
                 type="text"
                 className="form-control form-control-lg rounded-0"
-                name="uname1"
-                id="uname1"
-                required=""
+                placeholder="Username"
               />
+              <div className="input-group-append">
+                <span className="input-group-text span-check rounded-0" />
+              </div>
               <div className="invalid-feedback">Oops, you missed this one.</div>
             </div>
             <div className="form-group">

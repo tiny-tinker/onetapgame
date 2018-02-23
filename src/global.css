@@ -4,3 +4,46 @@ body {
   font-family: sans-serif;
   background-color: #161a27;
 }
+
+/* Common input*/
+.input {
+  border-color: #a4a1a7;
+}
+.input-group-append span,
+.input-group-prepend span {
+  background-color: #a4a1a7;
+  border-color: #a4a1a7;
+}
+.input-group-prepend span {
+  font-size: 1.7rem;
+}
+
+input.form-control {
+  background-color: #a4a1a7;
+  border-color: #a4a1a7;
+}
+
+.span-check {
+  position: relative;
+  background-color: #a4a1a7;
+  border: 1px solid #b2b3af;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.span-check:after {
+  position: absolute;
+  content: '';
+  left: -8px;
+  top: 7px;
+  width: 14px;
+  height: 25px;
+  border: solid #161928;
+  border-width: 0 1px 1px 0;
+  color: #161928;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -8,6 +8,8 @@ import { ConnectedRouter } from 'react-router-redux';
 import App from './containers/app';
 // Import bootstrap4 library
 import 'bootstrap/dist/css/bootstrap.css';
+// Import font-awesome library
+import './fonts/font-awesome/css/font-awesome.css';
 // Import global css
 import './global.css';
 
