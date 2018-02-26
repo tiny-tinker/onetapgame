@@ -1,0 +1,21 @@
+.signupform_bkg {
+  background-color: #2f3341;
+}
+
+.already {
+  font-size: 0.8rem;
+  color: #717486;
+}
+
+.card_header {
+  border-bottom: 2px solid #161a27;
+}
+
+.btn_singup {
+  background: -webkit-linear-gradient(#b18d2e, #fecc0d);
+  border: none;
+  color: #3d3e3f;
+}
+.btn_singup:active {
+  background: -webkit-linear-gradient(#b18d2e, #fecc0d) !important;
+}

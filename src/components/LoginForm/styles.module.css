@@ -14,6 +14,7 @@
 .btn_login {
   background: -webkit-linear-gradient(#b18d2e, #fecc0d);
   border: none;
+  color: #3d3e3f;
 }
 .btn_login:active {
   background: -webkit-linear-gradient(#b18d2e, #fecc0d) !important;

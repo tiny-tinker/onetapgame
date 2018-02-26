@@ -14,10 +14,16 @@ const LoginPage = Loadable({
   loading: Loading
 });
 
+const SignupPage = Loadable({
+  loader: () => import('./containers/SignupPage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/login" component={LoginPage} />>
+    <Route exact path="/login" component={LoginPage} />
+    <Route exact path="/signup" component={SignupPage} />
   </Switch>
 );
 
