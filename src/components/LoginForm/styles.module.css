@@ -10,3 +10,11 @@
 .card_header {
   border-bottom: 2px solid #161a27;
 }
+
+.btn_login {
+  background: -webkit-linear-gradient(#b18d2e, #fecc0d);
+  border: none;
+}
+.btn_login:active {
+  background: -webkit-linear-gradient(#b18d2e, #fecc0d) !important;
+}

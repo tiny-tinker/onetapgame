@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import * as styles from './styles.module.css';
 
 class LoginForm extends React.Component {
@@ -15,6 +16,10 @@ class LoginForm extends React.Component {
     const classCard = ['card rounded-2', styles.loginform_bkg].join(' ');
     const alreadyClass = ['text-center mb-0', styles.already].join(' ');
     const cardHClass = ['card-header', styles.card_header].join(' ');
+    const loginClass = [
+      'btn btn-lg col-8 mx-auto rounded-0',
+      styles.btn_login
+    ].join(' ');
     return (
       <div className={classCard}>
         <div className={cardHClass}>
@@ -32,7 +37,7 @@ class LoginForm extends React.Component {
           >
             <div className="input-group mb-3">
               <div className="input-group-prepend">
-                <span className="input-group-text fa fa-user rounded-0" />
+                <span className="input-group-text fa fa-user rounded-0 d-inline-flex" />
               </div>
               <input
                 type="text"
@@ -44,33 +49,40 @@ class LoginForm extends React.Component {
               </div>
               <div className="invalid-feedback">Oops, you missed this one.</div>
             </div>
-            <div className="form-group">
-              <label>Password</label>
+            <div className="input-group mb-3">
+              <div className="input-group-prepend">
+                <span className="input-group-text fa fa-lock rounded-0 d-inline-flex" />
+              </div>
               <input
-                type="password"
+                type="text"
                 className="form-control form-control-lg rounded-0"
-                id="pwd1"
-                required=""
-                autoComplete="new-password"
+                placeholder="Your password"
               />
-              <div className="invalid-feedback">Enter your password too!</div>
+              <div className="input-group-append">
+                <span className="input-group-text span-check rounded-0" />
+              </div>
+              <div className="invalid-feedback">Input your password.</div>
             </div>
-            <div>
-              <label className="custom-control custom-checkbox">
-                <input type="checkbox" className="custom-control-input" />
-                <span className="custom-control-indicator" />
-                <span className="custom-control-description small text-dark">
-                  Remember me on this computer
-                </span>
+            <div className="ml-1">
+              <label className="custom-checkbox color-grey">
+                Remember me
+                <input type="checkbox" />
+                <span className="checkmark" />
               </label>
             </div>
-            <button
-              type="submit"
-              className="btn btn-success btn-lg float-right"
-              id="btnLogin"
-            >
-              Login
-            </button>
+            <div className="row">
+              <button className={loginClass} id="btnLogin">
+                <b>Login Now</b>
+              </button>
+            </div>
+            <div className="row mt-3 text-center">
+              <p className="w-100">
+                <span className="color-grey"> New User? </span>
+                <Link className="color-yellow" to="/signup">
+                  Create an account
+                </Link>
+              </p>
+            </div>
           </form>
         </div>
       </div>
