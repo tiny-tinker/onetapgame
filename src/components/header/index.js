@@ -1,14 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import logo from '../../assets/images/logo.png';
+import * as styles from './styles.module.css';
 const Header = function HeaderComponent() {
   const navStyle = {
     backgroundColor: '#1b1d26'
   };
   return (
-    <nav className="navbar navbar-expand-md navbar-dark" style={navStyle}>
+    <nav
+      id="header"
+      className="navbar navbar-expand-md navbar-dark"
+      style={navStyle}
+    >
       <Link className="navbar-brand" to="/">
-        Navbar
+        <img className={styles.logo} src={logo} role="presentation" />
       </Link>
       <button
         className="navbar-toggler"

@@ -1,0 +1,16 @@
+.playerTeam {
+  display: block;
+  position: relative;
+}
+
+.plImgContainer {
+  position: absolute;
+  display: inline-block;
+}
+.plInfo {
+  position: relative;
+  padding-left: 78px;
+  padding-top: 13px;
+  display: block;
+  margin-top: -10px;
+}

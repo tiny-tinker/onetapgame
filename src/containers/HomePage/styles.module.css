@@ -1,0 +1,20 @@
+.leftBar,
+.rightBar {
+  min-width: 350px;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.rightBar {
+  min-width: 300px;
+}
+
+.ticketBoxContainer {
+  padding-top: 140px;
+  overflow-x: scroll;
+  overflow-y: auto;
+}
+.topLeadersContainer {
+  padding-right: 30px;
+}
