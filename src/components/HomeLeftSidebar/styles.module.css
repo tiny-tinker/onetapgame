@@ -19,7 +19,7 @@ th {
   padding-left: 15px;
 }
 .scroll_table td {
-  padding: 18px 15px;
+  padding: 5px 11px;
 }
 .scroll_table thead {
   background-color: #303341;
@@ -31,5 +31,5 @@ th {
   position: absolute;
   width: 100%;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 45px;
 }

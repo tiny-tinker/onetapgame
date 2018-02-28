@@ -8,6 +8,21 @@ const TopLeaders = function TopLeadersComponent() {
     0: {
       items: 1
     },
+    400: {
+      items: 4
+    },
+    700: {
+      items: 6
+    },
+    900: {
+      items: 8
+    },
+    1100: {
+      items: 10
+    },
+    1400: {
+      items: 12
+    },
     1600: {
       items: 12
     }

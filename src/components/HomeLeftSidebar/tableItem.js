@@ -3,7 +3,7 @@ import Hexagon from './../Hexagon';
 import * as styles from './tableItem.module.css';
 const TableItem = function TableItemComponent() {
   return (
-    <tr>
+    <tr className={styles.tableRow}>
       <td>
         <div className={styles.playerTeam}>
           <div className={styles.plImgContainer}>

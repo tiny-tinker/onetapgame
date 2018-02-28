@@ -7,7 +7,7 @@ class HomeLeftSidebar extends React.Component {
     return (
       <div className="h-100">
         <div className={styles.sidebarSelectContainer}>
-          <h3 className="color-yellow">History</h3>
+          <p className="color-yellow mb-0">History</p>
           <div className="select">
             <select>
               <option selected disabled>

@@ -39,7 +39,7 @@ const HomeRightSidebar = function HomeRightSidebarComponent() {
         </div>
       </div>
       <div className={styles.inputBoxContainer}>
-        <textarea rows="3" cols="50" />
+        <textarea rows="3" cols="50" className="w-100" />
         <div className={styles.buttonContainer}>
           <button className={styles.sendBtn}>
             <b>Send</b>

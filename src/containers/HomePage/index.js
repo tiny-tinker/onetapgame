@@ -17,7 +17,7 @@ class Home extends React.Component {
           >
             <HomeLeftSidebar />
           </div>
-          <div className="col pt-3">
+          <div className="col-8 pt-3 position-relative">
             <div
               className={[
                 'position-absolute w-100',
@@ -32,12 +32,44 @@ class Home extends React.Component {
                 styles.ticketBoxContainer
               ].join(' ')}
             >
-              <div className="m-3">
-                <BuyTicketBox />
-              </div>
-              <div className="m-3">
-                <BuyTicketBox />
-              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div className="m-3 d-inline-block">
+                        <BuyTicketBox />
+                      </div>
+                    </td>
+                    <td>
+                      <div className="m-3 d-inline-block">
+                        <BuyTicketBox />
+                      </div>
+                    </td>
+                    <td>
+                      <div className="m-3 d-inline-block">
+                        <BuyTicketBox />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className="m-3 d-inline-block">
+                        <BuyTicketBox />
+                      </div>
+                    </td>
+                    <td>
+                      <div className="m-3 d-inline-block">
+                        <BuyTicketBox />
+                      </div>
+                    </td>
+                    <td>
+                      <div className="m-3 d-inline-block">
+                        <BuyTicketBox />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div
@@ -53,5 +85,4 @@ class Home extends React.Component {
     );
   }
 }
-
 export default Home;
