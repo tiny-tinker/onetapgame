@@ -1,0 +1,48 @@
+.container {
+  height: 100%;
+  padding: 50px 15px 30px 15px;
+  position: relative;
+}
+
+.img_container {
+  text-align: center;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.img_container img {
+  border-radius: 50%;
+  border: 7px solid #1c243a;
+  width: 125px;
+  height: 125px;
+}
+
+.name {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.win {
+  color: #dca535;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.side_menu {
+  background-color: #1c243a;
+  height: 100%;
+  display: block;
+  padding-top: 152px;
+  border-radius: 1px;
+}
+
+.side_menu_container {
+  height: 100%;
+  padding-top: 40px;
+  position: relative;
+}
