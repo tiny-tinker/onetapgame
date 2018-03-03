@@ -29,6 +29,11 @@ const WalletPage = Loadable({
   loading: Loading
 });
 
+const AffiliatePage = Loadable({
+  loader: () => import('./containers/AffiliatePage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -36,6 +41,7 @@ const routes = (
     <Route exact path="/signup" component={SignupPage} />
     <Route exact path="/home" component={HomePage} />
     <Route exact path="/wallet" component={WalletPage} />
+    <Route exact path="/affiliate" component={AffiliatePage} />
   </Switch>
 );
 
