@@ -1,6 +1,6 @@
 .container {
   height: 100%;
-  padding: 50px 15px 30px 15px;
+  padding: 73px 15px 30px 15px;
   position: relative;
 }
 
@@ -35,9 +35,9 @@
 
 .side_menu {
   background-color: #1c243a;
-  height: 100%;
   display: block;
   padding-top: 152px;
+  padding-bottom: 20px;
   border-radius: 1px;
 }
 
@@ -45,4 +45,12 @@
   height: 100%;
   padding-top: 40px;
   position: relative;
+}
+
+.edit {
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 48px;
+  font-size: 1.2rem;
 }

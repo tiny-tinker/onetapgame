@@ -45,8 +45,8 @@ class DashboardLeftbar extends React.Component {
             <MenuItem image="settings.png" title="Settings" />
             <MenuItem image="logout.png" title="Logout" />
           </div>
+          <span className={['fa fa-pencil-square-o', styles.edit].join(' ')} />
         </div>
-        <span className="fa fa-pencil-square-o" />
       </div>
     );
   }

@@ -6,21 +6,17 @@ body {
 }
 html,
 body,
-#root,
-main {
+#root {
   height: 100%;
 }
 main {
   padding-top: 76px;
-  padding-bottom: 62px;
 }
 #header {
   position: absolute;
   width: 100%;
 }
 #footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 /* Scrollbar */

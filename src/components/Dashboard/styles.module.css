@@ -1,9 +1,12 @@
 .leftContainer {
-  height: 100%;
   width: 300px;
+  border-right: 1px solid #1c243a;
 }
 
 .rightContainer {
-  height: 100%;
   width: 500px;
+  border-left: 1px solid #1c243a;
+}
+
+.container {
 }

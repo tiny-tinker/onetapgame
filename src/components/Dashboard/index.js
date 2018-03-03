@@ -6,8 +6,8 @@ import * as styles from './styles.module.css';
 class Dashboard extends React.Component {
   render() {
     return (
-      <div className="container-fluid h-100">
-        <div className="row h-100">
+      <div className="container-fluid">
+        <div className="row">
           <div className={styles.leftContainer}>
             <DashboardLeftbar />
           </div>
