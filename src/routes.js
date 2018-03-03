@@ -39,6 +39,11 @@ const DepositPage = Loadable({
   loading: Loading
 });
 
+const ProfilePage = Loadable({
+  loader: () => import('./containers/ProfilePage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -48,6 +53,7 @@ const routes = (
     <Route exact path="/wallet" component={WalletPage} />
     <Route exact path="/affiliate" component={AffiliatePage} />
     <Route exact path="/deposit" component={DepositPage} />
+    <Route exact path="/profile" component={ProfilePage} />
   </Switch>
 );
 
