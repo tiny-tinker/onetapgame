@@ -44,6 +44,11 @@ const ProfilePage = Loadable({
   loading: Loading
 });
 
+const SettingsPage = Loadable({
+  loader: () => import('./containers/SettingsPage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -54,6 +59,7 @@ const routes = (
     <Route exact path="/affiliate" component={AffiliatePage} />
     <Route exact path="/deposit" component={DepositPage} />
     <Route exact path="/profile" component={ProfilePage} />
+    <Route exact path="/settings" component={SettingsPage} />
   </Switch>
 );
 
