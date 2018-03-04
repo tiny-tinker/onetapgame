@@ -54,6 +54,11 @@ const SupportTicketPage = Loadable({
   loading: Loading
 });
 
+const TransactionsReportPage = Loadable({
+  loader: () => import('./containers/TransactionsReportPage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -66,6 +71,7 @@ const routes = (
     <Route exact path="/profile" component={ProfilePage} />
     <Route exact path="/settings" component={SettingsPage} />
     <Route exact path="/ticket" component={SupportTicketPage} />
+    <Route exact path="/report" component={TransactionsReportPage} />
   </Switch>
 );
 
