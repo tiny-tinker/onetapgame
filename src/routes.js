@@ -49,6 +49,11 @@ const SettingsPage = Loadable({
   loading: Loading
 });
 
+const SupportTicketPage = Loadable({
+  loader: () => import('./containers/SupportTicketPage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -60,6 +65,7 @@ const routes = (
     <Route exact path="/deposit" component={DepositPage} />
     <Route exact path="/profile" component={ProfilePage} />
     <Route exact path="/settings" component={SettingsPage} />
+    <Route exact path="/ticket" component={SupportTicketPage} />
   </Switch>
 );
 
