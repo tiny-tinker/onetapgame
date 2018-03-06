@@ -4,6 +4,8 @@
   margin-left: 0;
   margin-right: 0;
   background-color: #222633;
+  position: fixed;
+  bottom: 0;
 }
 .footer p {
   margin-bottom: 0;

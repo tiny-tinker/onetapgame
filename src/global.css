@@ -11,6 +11,7 @@ body,
 }
 main {
   padding-top: 76px;
+  margin-bottom: 62px;
 }
 #header {
   position: absolute;

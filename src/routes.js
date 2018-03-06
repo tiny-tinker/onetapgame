@@ -59,6 +59,11 @@ const TransactionsReportPage = Loadable({
   loading: Loading
 });
 
+const WithdrawPage = Loadable({
+  loader: () => import('./containers/WithdrawPage'),
+  loading: Loading
+});
+
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -72,6 +77,7 @@ const routes = (
     <Route exact path="/settings" component={SettingsPage} />
     <Route exact path="/ticket" component={SupportTicketPage} />
     <Route exact path="/report" component={TransactionsReportPage} />
+    <Route exact path="/withdraw" component={WithdrawPage} />
   </Switch>
 );
 
