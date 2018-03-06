@@ -10,15 +10,28 @@ body,
   height: 100%;
 }
 main {
-  padding-top: 76px;
+  padding-top: 60px;
   margin-bottom: 62px;
 }
 #header {
   position: absolute;
   width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 #footer {
   width: 100%;
+}
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #fde34b !important;
+}
+
+#navbarsExampleDefault {
+  padding-top: 8px;
+}
+
+.disabled-link {
+  pointer-events: none;
 }
 /* Scrollbar */
 /*

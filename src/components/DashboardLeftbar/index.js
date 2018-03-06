@@ -1,9 +1,45 @@
 import React from 'react';
+import { createStructuredSelector } from 'reselect';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 import MenuItem from './MenuItem';
 import * as styles from './styles.module.css';
 import profileImg from '../../assets/images/profile.png';
+import * as actions from './actions';
+import { makeMenuItems, makeActiveItem } from './selectors';
 
 class DashboardLeftbar extends React.Component {
+  static createMenuItems(menu_items, activeItem, menuClick) {
+    return menu_items.map(function(item) {
+      if (item.id == activeItem[0].id)
+        return (
+          <MenuItem
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            menuClick={menuClick}
+            image={item.image_active}
+            url={item.url}
+            active={true}
+            activeLink={true}
+          />
+        );
+      else
+        return (
+          <MenuItem
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            menuClick={menuClick}
+            image={item.image}
+            url={item.url}
+            active={false}
+            activeLink={true}
+          />
+        );
+    });
+  }
   render() {
     return (
       <div className={styles.container}>
@@ -32,17 +68,11 @@ class DashboardLeftbar extends React.Component {
               title2="$5932.0221"
               hasBorder={true}
             />
-            <MenuItem image="my_profile.png" title="My Profile" />
-            <MenuItem image="my_wallet.png" title="My Wallet" />
-            <MenuItem image="deposit_fund.png" title="Deposit Fund" />
-            <MenuItem image="withdraw_fund.png" title="Withdraw Fund" />
-            <MenuItem
-              image="transaction_report.png"
-              title="Transaction Report"
-            />
-            <MenuItem image="support_ticket.png" title="Support Ticket" />
-            <MenuItem image="affiliates.png" title="Affiliates" />
-            <MenuItem image="settings.png" title="Settings" />
+            {DashboardLeftbar.createMenuItems(
+              this.props.menu_items,
+              this.props.activeItem,
+              this.props.menuClick
+            )}
             <MenuItem image="logout.png" title="Logout" />
           </div>
           <span className={['fa fa-pencil-square-o', styles.edit].join(' ')} />
@@ -52,4 +82,22 @@ class DashboardLeftbar extends React.Component {
   }
 }
 
-export default DashboardLeftbar;
+const mapStateToProps = createStructuredSelector({
+  menu_items: makeMenuItems(),
+  activeItem: makeActiveItem()
+});
+
+function mapDispatchToProps(dispatch, ownProps) {
+  return {
+    actions: {
+      ...ownProps.actions,
+      ...bindActionCreators({ ...actions }, dispatch)
+    },
+    menuClick(item) {
+      dispatch(actions.selectMenu(item));
+    }
+  };
+}
+
+//export default DashboardLeftbar;
+export default connect(mapStateToProps, mapDispatchToProps)(DashboardLeftbar);

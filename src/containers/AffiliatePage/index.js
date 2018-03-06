@@ -7,6 +7,9 @@ class AffiliatePage extends React.Component {
     return (
       <Dashboard>
         <div className={styles.container}>
+          <p className={['mb-1', styles.title].join(' ')}>
+            <b>My Affiliate Link</b>
+          </p>
           <hr className={[styles.divider, 'mt-0 mb-0'].join(' ')} />
           <div className="row h-100">
             <div className="col-9">

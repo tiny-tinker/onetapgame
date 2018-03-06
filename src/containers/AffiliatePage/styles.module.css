@@ -14,6 +14,12 @@
   border-left: 1px solid #40434c;
 }
 
+.title {
+  padding-top: 0px;
+  color: #4c4c4c;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
 .subTitle {
   color: #4d4d4d;
   margin-top: 12px;
