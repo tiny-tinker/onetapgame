@@ -64,6 +64,10 @@ const WithdrawPage = Loadable({
   loading: Loading
 });
 
+const GameRoomPage = Loadable({
+  loader: () => import('./containers/GameRoomPage'),
+  loading: Loading
+});
 const routes = (
   <Switch>
     <Route exact path="/" component={Home} />
@@ -78,6 +82,7 @@ const routes = (
     <Route exact path="/ticket" component={SupportTicketPage} />
     <Route exact path="/report" component={TransactionsReportPage} />
     <Route exact path="/withdraw" component={WithdrawPage} />
+    <Route exact path="/gameroom" component={GameRoomPage} />
   </Switch>
 );
 
